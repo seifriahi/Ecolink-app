@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Ecolink"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LandingPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+        <activity
+            android:name=".ui.SignupActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
 
+        <activity
+            android:name=".ui.UserProfileActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+        <activity
+            android:name=".ui.ModifyProfileActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+        <activity android:name=".ui.DeactivatedUserActivity" />
+        <activity android:name=".ui.BannedUserActivity" />
+        <activity
+            android:name=".ui.DeactivateAccountActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+
+        <activity
+            android:name=".ui.PinEntryActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+        <activity
+            android:name=".ui.PasswordResetActivity"
+            android:exported="true">
+            <!-- Add any intent filters or other activity-related configurations here -->
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
