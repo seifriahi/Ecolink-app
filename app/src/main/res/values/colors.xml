@@ -8,4 +8,6 @@
     <color name="secoder">#0F9015</color><!-- Couleur de la bordure -->
     <color name="greenpressed">#FF0F9015</color>
 
+    <color name="your_status_bar_color">#A6FF40</color>
+    <color name="your_navigation_bar_color">#9EBA8F</color>
 </resources>

@@ -1,5 +1,6 @@
 package com.ecolink.api
 import com.ecolink.models.Lesson
+import com.ecolink.models.News
 import com.ecolink.models.Comment
 import okhttp3.MultipartBody
 import retrofit2.Call
@@ -16,6 +17,18 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface Api {
+
+    @GET("projet/allProject")
+    fun allprojects(): Call<List<News>>
+
+
+    @POST("projet/addproject")
+    @Multipart
+    fun addProjects(
+        @Part image: MultipartBody.Part,
+        @Part("title") title: String,
+        @Part("description") description: String
+    ): Call<News>
 
     @GET("comments/{lessonId}")
     suspend fun getCommentsByLessonId(@Path("lessonId") lessonId: String): Response<List<Comment>>

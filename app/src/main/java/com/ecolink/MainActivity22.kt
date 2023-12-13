@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.ecolink.Adapter.EventAdapter
 import com.ecolink.ViewModel.EventViewModel
-import com.ecolink.models.Event
+import com.ecolink.modéle.Event
 import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat
 import java.util.Locale

@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.ecolink.models.Event
+import com.ecolink.modéle.Event
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import java.net.HttpURLConnection

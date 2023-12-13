@@ -1,0 +1,6 @@
+<!-- res/drawable/splash_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Add your splash screen background, logo, or any other elements here -->
+
+</layer-list>

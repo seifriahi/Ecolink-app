@@ -7,8 +7,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.ecolink.R
-import com.ecolink.data.LoginResponse
-import com.ecolink.data.SignupResponse
 import com.ecolink.data.UserProfileResponse
 import com.ecolink.viewmodel.LoginViewModel
 import retrofit2.Call
@@ -16,17 +14,13 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.Header
-import retrofit2.http.POST
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.widget.Toast
 import com.ecolink.MainActivity
-import com.ecolink.MainActivity22
 
 
 class LoginActivity : AppCompatActivity() {

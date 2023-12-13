@@ -2,6 +2,11 @@
 <resources>
     <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/custom_spinner_background</item>
+        <item name="android:statusBarColor">@color/your_status_bar_color</item>
+        <item name="android:navigationBarColor">@color/your_navigation_bar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@drawable/ecolinklogo</item>
+
     </style>
     <style name="SmallDatePickerStyle">
         <item name="android:textSize">12sp</item> <!-- Adjust the text size as needed -->

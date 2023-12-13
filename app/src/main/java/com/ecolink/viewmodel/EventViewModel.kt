@@ -2,7 +2,7 @@ package com.ecolink.ViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.ecolink.models.Event
+import com.ecolink.modéle.Event
 import androidx.lifecycle.viewModelScope
 import com.ecolink.Service.RetrofitInstance
 import kotlinx.coroutines.launch

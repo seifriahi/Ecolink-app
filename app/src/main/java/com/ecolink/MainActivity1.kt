@@ -1,6 +1,5 @@
 package com.ecolink
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,9 +13,8 @@ import com.ecolink.databinding.ActivityMainBinding
 import com.ecolink.fragments.EventsFragment
 import com.ecolink.fragments.NewsFragment
 import com.ecolink.fragments.ProfileFragment
-import com.ecolink.ui.UserProfileActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity1 : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
 
@@ -42,17 +40,13 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         binding.btnEvents.setOnClickListener {
             changeFragment(EventsFragment(), "")
         }
 
-
-    binding.btnProfile.setOnClickListener {
-        val intent = Intent(this, MainActivity22::class.java)
-
-        // Start the SecondActivity
-        startActivity(intent)          }
+        binding.btnProfile.setOnClickListener {
+            changeFragment(ProfileFragment(), "")
+        }
 
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container, NewsFragment()).commit()
     }
@@ -72,13 +66,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.infoMenu -> {
-                // Handle the click event for "Lesson" menu item
-                // For example, you can start a new activity or perform some other action
-                val intent = Intent(this, UserProfileActivity::class.java)
-                startActivity(intent)
-                return true
+
+        when(item.itemId){
+
+            R.id.logoutMenu ->{
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("Logout")
+                builder.setMessage("Are you sure you want to logout ?")
+                builder.setPositiveButton("Yes"){ dialogInterface, which ->
+                    finish()
+                }
+                builder.setNegativeButton("No"){dialogInterface, which ->
+                    dialogInterface.dismiss()
+                }
+                builder.create().show()
             }
         }
 

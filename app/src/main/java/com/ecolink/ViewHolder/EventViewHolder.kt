@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ecolink.R
-import com.ecolink.models.Event
+import com.ecolink.modéle.Event
 import com.squareup.picasso.Picasso
 
 class EventViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

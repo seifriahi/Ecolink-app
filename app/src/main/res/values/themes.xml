@@ -6,4 +6,6 @@
     </style>
 
     <style name="Theme.Ecolink" parent="Base.Theme.Ecolink" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </style>
 </resources>

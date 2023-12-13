@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.ecolink.R
 import com.ecolink.api.Api
-import com.ecolink.models.Lesson
+import com.ecolink.models.News
 import com.google.android.material.snackbar.Snackbar
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -24,7 +24,7 @@ import retrofit2.Response
 import java.io.File
 import java.io.FileOutputStream
 
-class Addproduit1 : Fragment(R.layout.fragment_add_product), UploadRequestBody.UploadCallback {
+class Addproduit : Fragment(R.layout.fragment_add_product1), UploadRequestBody.UploadCallback {
 
     private lateinit var selectedImageUri: Uri
 
@@ -42,7 +42,7 @@ class Addproduit1 : Fragment(R.layout.fragment_add_product), UploadRequestBody.U
     }
 
     private fun uploadImage() {
-       // val brandId = requireActivity().intent.getStringExtra("id")
+        //val brandId = requireActivity().intent.getStringExtra("id")
 
         val apiInterface = Api.create()
         //val progress_bar = requireView().findViewById<ProgressBar>(R.id.progress_bar)
@@ -53,9 +53,11 @@ class Addproduit1 : Fragment(R.layout.fragment_add_product), UploadRequestBody.U
             return
         }
 
-       // val parcelFileDescriptor = requireActivity().contentResolver.openFileDescriptor(
-         //   selectedImageUri!!, "r", null
-       // ) ?: return
+        //val parcelFileDescriptor = requireActivity().contentResolver.openFileDescriptor(
+        //selectedImageUri!!, "r", null
+        //) ?: return
+
+
         val productname = requireView().findViewById<EditText>(R.id.produitname)
         val productdescription = requireView().findViewById<EditText>(R.id.description)
 
@@ -72,15 +74,15 @@ class Addproduit1 : Fragment(R.layout.fragment_add_product), UploadRequestBody.U
         val title = productname.text.toString()
         val description = productdescription.text.toString()
 
-        apiInterface.addProject(
+        apiInterface.addProjects(
 
             part,
             title,
             description,
 
-        ).enqueue(object : Callback<Lesson> {
+        ).enqueue(object : Callback<News> {
 
-            override fun onResponse(call: Call<Lesson>, response: Response<Lesson>) {
+            override fun onResponse(call: Call<News>, response: Response<News>) {
                 if (response.isSuccessful) {
                     Toast.makeText(
                         requireContext(),
@@ -98,7 +100,7 @@ class Addproduit1 : Fragment(R.layout.fragment_add_product), UploadRequestBody.U
                 }
             }
 
-            override fun onFailure(call: Call<Lesson>, t: Throwable) {
+            override fun onFailure(call: Call<News>, t: Throwable) {
                 Toast.makeText(requireContext(), "${t.message}", Toast.LENGTH_SHORT).show()
                 Log.e("TAG", "onFailure: ${t.message}")
             }
