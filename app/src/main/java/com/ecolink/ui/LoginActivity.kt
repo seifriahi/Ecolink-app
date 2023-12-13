@@ -25,6 +25,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.widget.Toast
+import com.ecolink.MainActivity
+import com.ecolink.MainActivity22
 
 
 class LoginActivity : AppCompatActivity() {
@@ -52,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
                 println(token)
                 println("test for the token retrival")// Assuming your LoginResponse has a 'token' property
                 authenticateUserProfile(token)
-                val intent = Intent(this, UserProfileActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ecolink.data.RetrofitClient
 import com.ecolink.data.VerifyUserResponse
-import com.ecolink.model.User
+import com.ecolink.models.User
 import kotlinx.coroutines.launch
 import retrofit2.Response
 

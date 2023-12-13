@@ -10,7 +10,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.ecolink.R
-import com.ecolink.model.User
+import com.ecolink.models.User
 import com.ecolink.viewmodel.ModifyProfileViewModel
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
