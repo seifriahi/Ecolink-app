@@ -5,9 +5,6 @@
     <img width="33%" src="https://i.imgur.com/i0b4i9f.png">
 </p>
 
-
-![Swift](https://img.shields.io/badge/Swift-5.5-orange?style=flat-square) ![iOS](https://img.shields.io/badge/iOS-15.0-brightgreen?style=flat-square) ![SwiftUI](https://img.shields.io/badge/SwiftUI-2.0-blue?style=flat-square)
-
 ## Overview
 
 Ecolink is an iOS mobile app crafted with SwiftUI, aimed at empowering users to actively contribute to environmental causes. Developed by Sameh ben amor, Houssem ben mabrouk, Daly tlili, Mohamed Ajili, Riahi Seif, and Zied abderrahim, the app presents a user-centric approach, offering modules that cover various aspects of environmental engagement.
