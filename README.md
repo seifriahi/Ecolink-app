@@ -7,7 +7,7 @@
 
 ## Overview
 
-Ecolink is an Android mobile app developed with Kotlin, designed to empower users to actively contribute to environmental causes. The application is developed by Sameh Ben Amor, Houssem Ben Mabrouk, Daly Tlili, Mohamed Ajili, Riahi Seif, and Zied Abderrahim. Ecolink offers multiple modules to engage users in sustainable activities.
+Ecolink is an Android mobile app developed with Kotlin, designed to empower users to actively contribute to environmental causes. The application is developed by Riahi Seif, Houssem Ben Mabrouk, Daly Tlili, Mohamed Ajili and Sameh Ben Amor . Ecolink offers multiple modules to engage users in sustainable activities.
 
 ## Modules
 
@@ -72,4 +72,4 @@ For inquiries and support, reach out to the Ecolink team:
 | Daly tlili           |
 | Mohamed Ajili        |
 | Sameh ben amor       |
-| Zied abderrahim      |
+
