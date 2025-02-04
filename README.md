@@ -63,9 +63,9 @@ For inquiries and support, reach out to the Ecolink team:
 
 | Team Member          |
 |----------------------|
-| Sameh ben amor       |
+| Riahi Seif           |
 | Houssem ben mabrouk  |
 | Daly tlili           |
 | Mohamed Ajili        |
-| Riahi Seif           |
+| Sameh ben amor       |
 | Zied abderrahim      |
